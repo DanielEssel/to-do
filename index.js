@@ -7,6 +7,16 @@ const todos = [
     {task: "move out", status:"mud" },
 ];
 
+const fetchTodos = () => {
+    fetch("https://jsonplaceholder.typicode.com/todos")
+    .then((response) => {
+return response.json()
+    })
+    .then((data) => {
+        console.log(datat)
+    })
+}
+
 const viewButton = document.getElementById("view-button");
 const todoItems = document.getElementById("todo-list");
 // console.log(viewButton);
